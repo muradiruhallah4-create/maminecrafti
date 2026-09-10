@@ -1,0 +1,384 @@
+<!DOCTYPE html>
+<html lang="fa" dir="rtl">
+<head>
+    <meta charset="UTF-8">
+
+    <meta name="viewport"
+          content="width=device-width, initial-scale=1.0">
+
+    <title>ماماینکرافتی | فروشگاه اسکریپت</title>
+
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+    <!-- نوار بالای سایت -->
+    <header class="navbar">
+
+        <div class="logo">
+            ⛏️ ماماینکرافتی
+        </div>
+
+        <nav>
+            <a href="#home">خانه</a>
+            <a href="#scripts">اسکریپت‌ها</a>
+            <a href="#coins">سکه</a>
+            <a href="#account">حساب من</a>
+        </nav>
+
+        <!-- موجودی سکه -->
+        <div class="coin-box">
+            🪙
+            <span id="coinBalance">100</span>
+        </div>
+
+    </header>
+
+
+    <!-- بخش اصلی -->
+    <main id="home">
+
+        <section class="hero">
+
+            <div class="hero-content">
+
+                <span class="small-title">
+                    MINECRAFT SCRIPT STORE
+                </span>
+
+                <h1>
+                    اسکریپت‌های ماینکرافتی
+                    <br>
+                    با سیستم سکه
+                </h1>
+
+                <p>
+                    اسکریپت مورد نیازت را انتخاب کن،
+                    با سکه خرید کن و برای گرفتن سکه بیشتر
+                    تبلیغ ببین.
+                </p>
+
+                <div class="hero-buttons">
+
+                    <a href="#scripts"
+                       class="main-button">
+                        مشاهده اسکریپت‌ها
+                    </a>
+
+                    <a href="#coins"
+                       class="second-button">
+                        🪙 دریافت سکه
+                    </a>
+
+                </div>
+
+            </div>
+
+        </section>
+
+
+        <!-- سیستم سکه -->
+        <section id="coins" class="coin-section">
+
+            <div class="section-title">
+                <span>🪙</span>
+
+                <h2>
+                    دریافت سکه رایگان
+                </h2>
+
+                <p>
+                    برای دریافت سکه، تبلیغ مشاهده کن.
+                </p>
+            </div>
+
+
+            <div class="reward-card">
+
+                <div class="ad-icon">
+                    📺
+                </div>
+
+                <h3>
+                    تماشای تبلیغ
+                </h3>
+
+                <p>
+                    یک تبلیغ کامل مشاهده کن و
+                    <strong>25 سکه</strong> دریافت کن.
+                </p>
+
+                <button
+                    id="watchAdButton"
+                    class="ad-button">
+
+                    ▶️ مشاهده تبلیغ
+                </button>
+
+                <div id="adMessage"
+                     class="ad-message">
+                </div>
+
+            </div>
+
+        </section>
+
+
+        <!-- فروشگاه -->
+        <section id="scripts"
+                 class="scripts-section">
+
+            <div class="section-title">
+
+                <span>⚒️</span>
+
+                <h2>
+                    فروشگاه اسکریپت
+                </h2>
+
+                <p>
+                    اسکریپت مورد نظر خود را انتخاب کنید.
+                </p>
+
+            </div>
+
+
+            <div class="scripts-grid">
+
+
+                <!-- اسکریپت ۱ -->
+                <article class="script-card">
+
+                    <div class="script-image">
+                        👻
+                    </div>
+
+                    <div class="script-info">
+
+                        <span class="category">
+                            Horror
+                        </span>
+
+                        <h3>
+                            Horror System
+                        </h3>
+
+                        <p>
+                            سیستم ترسناک برای
+                            ماینکرافت قدیمی.
+                        </p>
+
+                        <div class="script-footer">
+
+                            <span class="price">
+                                🪙 50
+                            </span>
+
+                            <button
+                                class="buy-button"
+                                data-price="50"
+                                data-name="Horror System">
+
+                                خرید
+                            </button>
+
+                        </div>
+
+                    </div>
+
+                </article>
+
+
+                <!-- اسکریپت ۲ -->
+                <article class="script-card">
+
+                    <div class="script-image">
+                        ⚔️
+                    </div>
+
+                    <div class="script-info">
+
+                        <span class="category">
+                            Combat
+                        </span>
+
+                        <h3>
+                            Advanced Combat
+                        </h3>
+
+                        <p>
+                            سیستم مبارزه پیشرفته
+                            برای بازیکنان.
+                        </p>
+
+                        <div class="script-footer">
+
+                            <span class="price">
+                                🪙 75
+                            </span>
+
+                            <button
+                                class="buy-button"
+                                data-price="75"
+                                data-name="Advanced Combat">
+
+                                خرید
+                            </button>
+
+                        </div>
+
+                    </div>
+
+                </article>
+
+
+                <!-- اسکریپت ۳ -->
+                <article class="script-card">
+
+                    <div class="script-image">
+                        🧟
+                    </div>
+
+                    <div class="script-info">
+
+                        <span class="category">
+                            Mobs
+                        </span>
+
+                        <h3>
+                            Custom Mobs
+                        </h3>
+
+                        <p>
+                            سیستم ساخت و کنترل
+                            موجودات سفارشی.
+                        </p>
+
+                        <div class="script-footer">
+
+                            <span class="price">
+                                🪙 100
+                            </span>
+
+                            <button
+                                class="buy-button"
+                                data-price="100"
+                                data-name="Custom Mobs">
+
+                                خرید
+                            </button>
+
+                        </div>
+
+                    </div>
+
+                </article>
+
+
+                <!-- اسکریپت ۴ -->
+                <article class="script-card">
+
+                    <div class="script-image">
+                        🏰
+                    </div>
+
+                    <div class="script-info">
+
+                        <span class="category">
+                            Structure
+                        </span>
+
+                        <h3>
+                            Castle Generator
+                        </h3>
+
+                        <p>
+                            ساخت خودکار قلعه
+                            در دنیای بازی.
+                        </p>
+
+                        <div class="script-footer">
+
+                            <span class="price">
+                                🪙 150
+                            </span>
+
+                            <button
+                                class="buy-button"
+                                data-price="150"
+                                data-name="Castle Generator">
+
+                                خرید
+                            </button>
+
+                        </div>
+
+                    </div>
+
+                </article>
+
+
+            </div>
+
+        </section>
+
+
+        <!-- حساب کاربری -->
+        <section id="account"
+                 class="account-section">
+
+            <div class="account-card">
+
+                <div class="avatar">
+                    ⛏️
+                </div>
+
+                <div>
+
+                    <h2>
+                        حساب من
+                    </h2>
+
+                    <p>
+                        موجودی فعلی:
+                        <strong>
+                            🪙
+                            <span id="accountCoins">
+                                100
+                            </span>
+                        </strong>
+                    </p>
+
+                </div>
+
+            </div>
+
+        </section>
+
+    </main>
+
+
+    <!-- فوتر -->
+    <footer>
+
+        <h3>
+            ⛏️ ماماینکرافتی
+        </h3>
+
+        <p>
+            فروشگاه اسکریپت و ابزارهای ماینکرافت
+        </p>
+
+        <p class="copyright">
+            © 2026 Maminecrafti
+        </p>
+
+    </footer>
+
+
+    <!-- JavaScript -->
+    <script src="script.js"></script>
+
+</body>
+</html>

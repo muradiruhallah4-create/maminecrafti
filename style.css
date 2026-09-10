@@ -1,0 +1,536 @@
+/* ================================
+   ماماینکرافتی
+   Main Style
+================================ */
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+html {
+    scroll-behavior: smooth;
+}
+
+body {
+    font-family: Arial, Tahoma, sans-serif;
+    background: #0b0f14;
+    color: #ffffff;
+    line-height: 1.7;
+}
+
+/* ================================
+   Navbar
+================================ */
+
+.navbar {
+    width: 100%;
+    min-height: 70px;
+    padding: 12px 5%;
+    background: #111820;
+    border-bottom: 1px solid #27323d;
+
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    gap: 20px;
+
+    position: sticky;
+    top: 0;
+    z-index: 1000;
+}
+
+.logo {
+    font-size: 21px;
+    font-weight: bold;
+    white-space: nowrap;
+}
+
+.navbar nav {
+    display: flex;
+    gap: 20px;
+}
+
+.navbar nav a {
+    color: #c8d1d9;
+    text-decoration: none;
+    font-size: 14px;
+    transition: 0.2s;
+}
+
+.navbar nav a:hover {
+    color: #59d36c;
+}
+
+/* Coin */
+
+.coin-box {
+    background: #1a222c;
+    border: 1px solid #34414e;
+    border-radius: 10px;
+
+    padding: 7px 13px;
+
+    color: #ffd84d;
+    font-weight: bold;
+}
+
+/* ================================
+   Hero
+================================ */
+
+.hero {
+    min-height: 560px;
+    padding: 80px 7%;
+
+    display: flex;
+    align-items: center;
+
+    background:
+        linear-gradient(
+            rgba(5, 8, 12, 0.85),
+            rgba(5, 8, 12, 0.95)
+        );
+}
+
+.hero-content {
+    max-width: 750px;
+}
+
+.small-title {
+    color: #59d36c;
+    font-size: 13px;
+    font-weight: bold;
+    letter-spacing: 2px;
+}
+
+.hero h1 {
+    margin-top: 15px;
+
+    font-size: clamp(38px, 7vw, 72px);
+    line-height: 1.15;
+
+    color: #ffffff;
+}
+
+.hero p {
+    margin-top: 25px;
+
+    max-width: 600px;
+
+    color: #aeb8c2;
+    font-size: 17px;
+}
+
+.hero-buttons {
+    margin-top: 35px;
+
+    display: flex;
+    flex-wrap: wrap;
+    gap: 12px;
+}
+
+.main-button,
+.second-button {
+    display: inline-block;
+
+    padding: 13px 22px;
+
+    border-radius: 9px;
+
+    text-decoration: none;
+    font-weight: bold;
+
+    transition: 0.2s;
+}
+
+.main-button {
+    background: #59d36c;
+    color: #071009;
+}
+
+.main-button:hover {
+    transform: translateY(-2px);
+}
+
+.second-button {
+    background: #1b242e;
+    color: #ffffff;
+    border: 1px solid #34414e;
+}
+
+/* ================================
+   Sections
+================================ */
+
+.coin-section,
+.scripts-section,
+.account-section {
+    padding: 80px 6%;
+}
+
+.section-title {
+    text-align: center;
+    margin-bottom: 40px;
+}
+
+.section-title span {
+    font-size: 35px;
+}
+
+.section-title h2 {
+    margin-top: 8px;
+    font-size: 32px;
+}
+
+.section-title p {
+    margin-top: 8px;
+    color: #909ca7;
+}
+
+/* ================================
+   Coin Reward
+================================ */
+
+.reward-card {
+    max-width: 500px;
+    margin: auto;
+
+    padding: 35px;
+
+    text-align: center;
+
+    background: #121a22;
+    border: 1px solid #2d3945;
+
+    border-radius: 16px;
+}
+
+.ad-icon {
+    width: 75px;
+    height: 75px;
+
+    margin: auto;
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    background: #1c2833;
+    border-radius: 15px;
+
+    font-size: 35px;
+}
+
+.reward-card h3 {
+    margin-top: 20px;
+    font-size: 24px;
+}
+
+.reward-card p {
+    margin: 10px 0 25px;
+    color: #aeb8c2;
+}
+
+.reward-card strong {
+    color: #ffd84d;
+}
+
+.ad-button {
+    width: 100%;
+
+    padding: 14px;
+
+    border: none;
+    border-radius: 9px;
+
+    background: #59d36c;
+    color: #071009;
+
+    font-size: 16px;
+    font-weight: bold;
+
+    cursor: pointer;
+
+    transition: 0.2s;
+}
+
+.ad-button:hover {
+    transform: translateY(-2px);
+}
+
+.ad-button:disabled {
+    opacity: 0.5;
+    cursor: not-allowed;
+}
+
+.ad-message {
+    margin-top: 15px;
+    min-height: 25px;
+
+    color: #ffd84d;
+}
+
+/* ================================
+   Scripts
+================================ */
+
+.scripts-section {
+    background: #0e141b;
+}
+
+.scripts-grid {
+    max-width: 1200px;
+    margin: auto;
+
+    display: grid;
+
+    grid-template-columns:
+        repeat(auto-fit, minmax(230px, 1fr));
+
+    gap: 20px;
+}
+
+.script-card {
+    overflow: hidden;
+
+    background: #151d26;
+
+    border: 1px solid #293541;
+    border-radius: 14px;
+
+    transition: 0.2s;
+}
+
+.script-card:hover {
+    transform: translateY(-4px);
+    border-color: #59d36c;
+}
+
+.script-image {
+    height: 150px;
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    background: #1b252f;
+
+    font-size: 65px;
+}
+
+.script-info {
+    padding: 20px;
+}
+
+.category {
+    display: inline-block;
+
+    padding: 3px 8px;
+
+    background: #203229;
+
+    border-radius: 5px;
+
+    color: #59d36c;
+
+    font-size: 11px;
+    font-weight: bold;
+}
+
+.script-info h3 {
+    margin-top: 10px;
+    font-size: 21px;
+}
+
+.script-info p {
+    margin-top: 8px;
+
+    color: #9ca8b3;
+    font-size: 14px;
+
+    min-height: 48px;
+}
+
+.script-footer {
+    margin-top: 20px;
+
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.price {
+    color: #ffd84d;
+    font-weight: bold;
+}
+
+.buy-button {
+    padding: 9px 16px;
+
+    border: none;
+    border-radius: 7px;
+
+    background: #59d36c;
+    color: #071009;
+
+    font-weight: bold;
+
+    cursor: pointer;
+}
+
+.buy-button:hover {
+    opacity: 0.85;
+}
+
+/* ================================
+   Account
+================================ */
+
+.account-card {
+    max-width: 600px;
+    margin: auto;
+
+    padding: 25px;
+
+    display: flex;
+    align-items: center;
+    gap: 20px;
+
+    background: #151d26;
+
+    border: 1px solid #2d3945;
+    border-radius: 14px;
+}
+
+.avatar {
+    width: 65px;
+    height: 65px;
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    background: #202b35;
+
+    border-radius: 12px;
+
+    font-size: 30px;
+}
+
+.account-card h2 {
+    font-size: 22px;
+}
+
+.account-card p {
+    color: #9ca8b3;
+}
+
+.account-card strong {
+    color: #ffd84d;
+}
+
+/* ================================
+   Footer
+================================ */
+
+footer {
+    padding: 45px 20px;
+
+    text-align: center;
+
+    background: #080c10;
+
+    border-top: 1px solid #202a34;
+}
+
+footer h3 {
+    font-size: 22px;
+}
+
+footer p {
+    color: #87929d;
+    margin-top: 5px;
+}
+
+footer .copyright {
+    margin-top: 20px;
+    font-size: 12px;
+}
+
+/* ================================
+   Mobile
+================================ */
+
+@media (max-width: 700px) {
+
+    .navbar {
+        flex-wrap: wrap;
+        justify-content: center;
+    }
+
+    .navbar nav {
+        width: 100%;
+
+        justify-content: center;
+
+        gap: 12px;
+    }
+
+    .navbar nav a {
+        font-size: 12px;
+    }
+
+    .hero {
+        min-height: 500px;
+        padding: 60px 6%;
+        text-align: center;
+    }
+
+    .hero-content {
+        margin: auto;
+    }
+
+    .hero p {
+        font-size: 15px;
+    }
+
+    .hero-buttons {
+        justify-content: center;
+    }
+
+    .coin-section,
+    .scripts-section,
+    .account-section {
+        padding: 55px 5%;
+    }
+
+    .section-title h2 {
+        font-size: 27px;
+    }
+
+    .account-card {
+        padding: 18px;
+    }
+}
+
+/* ================================
+   Very Small Phones
+================================ */
+
+@media (max-width: 380px) {
+
+    .hero h1 {
+        font-size: 34px;
+    }
+
+    .scripts-grid {
+        grid-template-columns: 1fr;
+    }
+
+    .navbar nav {
+        gap: 8px;
+    }
+
+}
